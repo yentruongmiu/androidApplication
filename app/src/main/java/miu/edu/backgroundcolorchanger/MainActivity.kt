@@ -8,7 +8,7 @@ import miu.edu.backgroundcolorchanger.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    internal lateinit var layout: LinearLayout
+    private lateinit var layout: LinearLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
