@@ -6,40 +6,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/mainlayout"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/university"
+        android:id="@+id/msg"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="Maharishi International University"
         android:textColor="#9C1E8F"
         android:layout_margin="5dp"
         android:padding="15dp"
-        android:textSize="20sp"
-        />
+        android:textSize="20sp"/>
+
+    <Space android:layout_width="match_parent"
+        android:layout_height="10dp"/>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
         android:text="Set Background"
-        android:background="#9C27B0"
         android:textSize="20sp"
-        android:onClick="bgChange"
-        />
-
-    <Space
         android:layout_width="match_parent"
+        android:onClick="bgColorChange"
+        android:layout_height="wrap_content"/>
+
+    <Space android:layout_width="match_parent"
         android:layout_height="30dp"/>
 
     <ImageButton
-        android:id="@+id/image"
+        android:id="@+id/button2"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:src="@drawable/miulogo"
-        android:layout_gravity="center"
-        android:onClick="imgBGChange"
-        />
+        android:contentDescription="Change background color of image"
+        android:layout_gravity="center" />
+
+
+
+
 
 </LinearLayout>

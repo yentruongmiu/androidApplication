@@ -2,11 +2,12 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
-
 android {
     namespace 'miu.edu.backgroundcolorchanger'
     compileSdk 33
-
+    buildFeatures {
+        viewBinding=true
+    }
     defaultConfig {
         applicationId "miu.edu.backgroundcolorchanger"
         minSdk 24
@@ -16,6 +17,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
     buildTypes {
         release {
             minifyEnabled false
